@@ -20,9 +20,12 @@
 
 body {
     font-size: 15px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
-.title {
+h2 {
     font-family: 'Big Shoulders Display', sans-seif;
     font-weight: 700;
     text-transform: uppercase;
@@ -49,7 +52,7 @@ body {
 .card {
     padding: 30px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     width: 200px;
 }
@@ -58,24 +61,25 @@ body {
     width: min-content;
 }
 
-button {
+.more {
     border-radius: 20px;
     padding: 10px 20px;
-    border: 2px solid var(--transparent-white);
+    border: 2px solid white;
     font-family: 'Lexend Daca', sans-serif;
     font-weight: 400;
     align-self: flex-start;
+    background-color: white;
 }
 
 .sedan {
     background-color: var(--bright-orange);
 }
 
-.sedan button {
+.sedan .more {
     color: var(--bright-orange);
 }
 
-.sedan button:hover {
+.sedan .more:hover {
     color: var(--transparent-white);
     background-color: var(--bright-orange);
 }
@@ -84,11 +88,11 @@ button {
     background-color: var(--dark-cyan);
 }
 
-.suv button {
+.suv .more {
     color: var(--dark-cyan);
 }
 
-.suv button:hover {
+.suv .more:hover {
     color: var(--transparent-white);
     background-color: var(--dark-cyan);
 }
@@ -97,11 +101,11 @@ button {
     background-color: var(--very-dark-cyan);
 }
 
-.luxury button {
+.luxury .more {
     color: var(--very-dark-cyan);
 }
 
-.luxury button:hover {
+.luxury .more:hover {
     color: var(--transparent-white);
     background-color: var(--very-dark-cyan);
 }
@@ -115,6 +119,5 @@ button {
 
     .card {
         width: 200px;
-
     }
 }
